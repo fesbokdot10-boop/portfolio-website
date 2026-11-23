@@ -11,8 +11,8 @@
     <body>
         <header class="header">
             <a href="#home" class="logo">RU <span>OK</span></a>
-            <i class="bx bx-menu" id="menu-icon"></i>
-            <nav class="navbar">
+            <i class="bx bx-menu" id="menu-icon" aria-label="Open navigation" aria-expanded="false" role="button" tabindex="0"></i>
+            <nav class="navbar" aria-label="Main navigation">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
@@ -20,7 +20,7 @@
             </nav>
         </header>
         <section class="home" id="home">
-            <div class="home-img">
+            <div class="home-content">
                 <h1>Hi, I'm <span>Anlijun Carmelotes</span></h1>
                 <h3>I'm a <span>Frontend Developer</span></h3>
                 <p>Welcome to my little corner of the internet. This site is a mix of things I'm working on, stuff Im learning, and whatever else I feel like sharing. Think of it as part portfolio, part journal, part “I have no idea what Im doing but lets see where it goes.” Thanks for stopping by—poke around, stay a while, or just say hey!</p>
@@ -45,13 +45,13 @@
                 </div>
             </div>
             <div class="home-img">
-                <img src="anli.jpg" alt="">
+                <img src="anli.jpg" alt="Portrait of Anlijun Carmelotes">
             </div>
         </section>
 
         <section class="about" id="about">
             <div class="about-img">
-                <img src="anli.jpg" alt="">
+                <img src="anli.jpg" alt="Anlijun Carmelotes">
             </div>
             <div class="about-content">
                 <h2>About <span>Me</span></h2>
@@ -64,33 +64,39 @@
         </section>
 
         <section class="services" id="services">
-            <h2 class="heading">Services</h2>
-
-                <div class="services-container">
-
-                    <div class="service-box">
-                        <div class="service-info">
-                            <i class="bx bxs-devices"></i>
-                            <h4>Mobile App Development</h4>
-                            <p>I specialize in custom mobile app development for iOS and Android. I help businesses and individuals bring their app ideas to life with clean, functional, and user-friendly designs. Let's work together to create something great! </p>
-                        </div>
+            <div class="section-heading">
+                <p class="eyebrow">What I offer</p>
+                <h2 class="heading">My <span>Services</span></h2>
+            </div>
+            <div class="services-container">
+                <article class="service-box">
+                    <div class="service-number">01</div>
+                    <div class="service-info">
+                        <i class="bx bxs-devices"></i>
+                        <h4>Mobile App Development</h4>
+                        <p>Clean, intuitive iOS and Android apps built around real users and smooth experiences.</p>
+                        <a href="#contact" class="service-link">Start a project <i class="bx bx-right-arrow-alt"></i></a>
                     </div>
-                    <div class="service-box">
-                        <div class="service-info">
-                            <i class="bx bx-code"></i>
-                            <h4>Frontend Development</h4>
-                            <p>I create responsive, user-friendly websites that look great and work smoothly across all devices. Whether you're building from scratch or improving an existing site, I focus on clean design and seamless functionality to bring your ideas to life.</p>
-                        </div>
+                </article>
+                <article class="service-box featured">
+                    <div class="service-number">02</div>
+                    <div class="service-info">
+                        <i class="bx bx-code"></i>
+                        <h4>Frontend Development</h4>
+                        <p>Responsive, accessible websites with polished interfaces that work beautifully on every screen.</p>
+                        <a href="#contact" class="service-link">Start a project <i class="bx bx-right-arrow-alt"></i></a>
                     </div>
-                    <div class="service-box">
-                        <div class="service-info">
-                            <i class="bx bx-code-curly"></i>
-                            <h4>Backend Development</h4>
-                            <p>I specialize in Backend Development. I build the powerful server-side systems that power your websites and apps. From databases to APIs, I focus on creating secure, scalable, and efficient solutions to ensure your site runs smoothly behind the scenes. </p>
-                        </div>
+                </article>
+                <article class="service-box">
+                    <div class="service-number">03</div>
+                    <div class="service-info">
+                        <i class="bx bx-code-curly"></i>
+                        <h4>Backend Development</h4>
+                        <p>Secure, scalable APIs and server systems designed to keep applications fast and reliable.</p>
+                        <a href="#contact" class="service-link">Start a project <i class="bx bx-right-arrow-alt"></i></a>
                     </div>
-                </div>
-            </h2>
+                </article>
+            </div>
         </section>
         <section class="contact" id="contact">
             <h2 class="heading">Contact<span>Me</span></h2>
